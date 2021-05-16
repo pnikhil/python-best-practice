@@ -3,6 +3,9 @@
 # Install dependencies
 pipenv install --dev
 
+# Install pre-commit
+brew install pre-commit
+
 # Setup pre-commit and pre-push hooks
 pipenv run pre-commit install -t pre-commit
 pipenv run pre-commit install -t pre-push
