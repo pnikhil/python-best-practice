@@ -14,6 +14,9 @@ pipenv run pre-commit install -t pre-push
 docker build -t fibonacci .  
 docker run -it --rm fibonacci 20
 
+# Run Unit Test on Docker Container
+docker run --rm fibonacci:test 10
+
 ```
 
 Repo for Python best practice
