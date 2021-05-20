@@ -9,6 +9,11 @@ brew install pre-commit
 # Setup pre-commit and pre-push hooks
 pipenv run pre-commit install -t pre-commit
 pipenv run pre-commit install -t pre-push
+
+# Run locally
+docker build -t fibonacci .  
+docker run -it --rm fibonacci 20
+
 ```
 
 Repo for Python best practice
